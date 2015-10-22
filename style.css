@@ -112,6 +112,7 @@ body {
     }
 
 .entry--title { color: #a73832; }
+.entry--title > a { color: #a73832; }
 
 .context__skills {
   color: #777;
