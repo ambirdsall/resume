@@ -73,7 +73,7 @@ body {
 }
 
 .intro { margin-top: 4em; }
-    .intro--contact-info__item { width: 50%; }
+    .contact-info--item { width: 50%; }
         /* FIXME: m-t is spacing w/r/t nameplate__title, not contact-info */
         .intro--description { margin-top: 5em; }
 
@@ -93,7 +93,7 @@ body {
   font-family: 'Droid Serif', serif;
 }
 
-.intro--nameplate, .intro--contact-info { text-align: center; }
+.intro--nameplate { text-align: center; }
     .nameplate__title {
       font-weight: 400;
       font-family: 'Droid Sans', sans-serif;
@@ -101,6 +101,14 @@ body {
     }
     .nameplate__name {
       font-size: 3em;
+    }
+    .item__left {
+      text-align: right;
+      padding-right: 2.25em;
+    }
+    .item__right {
+      text-align: left;
+      padding-left: 0.25em;
     }
 
 .entry--title { color: #a73832; }
