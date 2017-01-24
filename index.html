@@ -87,11 +87,14 @@
     .entry--context { width: 30%;}
     .entry--body { width: 70%; }
 
-    .entry:first-child {
-      border-top: 1px solid #ddd;
-      margin-top: 2em;
-      padding-top: 0.8em;
+    .entry {
+      page-break-inside: avoid;
     }
+      .entry:first-child {
+        border-top: 1px solid #ddd;
+        margin-top: 2em;
+        padding-top: 0.8em;
+      }
 
     /******************************************************************************\
                                       Typography
