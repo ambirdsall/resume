@@ -70,6 +70,17 @@
       margin-bottom: 2em;
     }
 
+    @media print {
+      body {
+        font-size: 11pt;
+      }
+
+      .container {
+        width: 90%;
+        margin-left: 5%;
+      }
+    }
+
     .entry--title, .context__dates { margin-top: 1rem; }
     .entry--title { margin-bottom: 0; }
     .entry--description, .context__skills { margin-top: 0.5em; }
@@ -83,6 +94,10 @@
         .contact-info--item { width: 50%; }
             /* FIXME: m-t is spacing w/r/t nameplate__title, not contact-info */
             .intro--description { margin-top: 5em; }
+
+    @media print {
+      .intro { margin-top: 1em; }
+    }
 
     .entry--context { width: 30%;}
     .entry--body { width: 70%; }
