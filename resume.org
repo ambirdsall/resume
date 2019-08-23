@@ -9,7 +9,7 @@
 #+html_link_home:
 #+html_link_up:
 #+html_mathjax:
-#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="http://thomasf.github.io/solarized-css/solarized-light.min.css" />
+#+HTML_HEAD: <link rel="stylesheet" type="text/css" href="./solarized-light.css" />
 #+html_head_extra:
 #+infojs_opt:
 #+creator:
@@ -97,11 +97,11 @@
    - Ruby & Rails
    - JavaScript, HTML, & CSS
 
-
+The O.G. programmer bootcamp. Mule Deer shout out!!!!!!
 
 ** Cornell College, class of '08
-   B.A. in English, minor in Music.
-   Received 2007 Winnifred Van Etten Award for Creative and Scholarly Excellence.
+-  B.A. in English, minor in Music
+-  2007 Winnifred Van Etten Award for Creative and Scholarly Excellence
 
    I chose my subjects through an interest in how human expression is shaped by the logical systems
    it exists within, like syntax, grammar, and tonal harmony. I was trained to evaluate writing for
