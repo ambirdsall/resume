@@ -18,25 +18,23 @@
 * Work Experience (5 years)
 ** SigFig
    - typescript
-   - angularJS
-   - custom webpack configuration
-   - custom CLI build tool for legacy frontend app
-   - react
    - scala
-   - akka-http
+   - angularJS
+   - frontend builds
+   - react
    - A/B testing
 
      My first role at SigFig was as an angularJS dev. Along with developing unit-tested features and
      fixing bugs, I helped redesign the build system of a large whitelabeled typescript app to use
-     ES2015 modules and dependencies managed with npm or yarn and converted hundreds of files to the
-     new system in the successful migration. I personally refactored the build system to decouple
-     its new build tool from its old one and significantly simplify its configuration. I also
-     designed the angularJS A/B testing API and rewrote its integration with a 3rd-party testing
-     service, using a modular design so that the 3rd-party service could easily be replaced by a
-     better alternative down the line. I was also involved in the early stages of work with a new
-     frontend application using typescript and react.
+     ES2015 modules and manage dependencies with npm or yarn; I converted hundreds of files to the
+     new system during the migration. I personally refactored the build system to decouple its new
+     build tool from its old one, significantly simplifying its configuration. I also designed the
+     component A/B testing API and rewrote its integration with a 3rd-party user assignment backend,
+     using a modular design so that the testing backend could easily be replaced by a better
+     alternative down the line. I was also involved in the early stages of work with a new frontend
+     application using typescript and react.
 
-     Soon after, I transfered over to help build the Scala backend service which supports that
+     Soon after, I transfered over to work on building the Scala backend service which supports that
      product. I helped spec out the REST API, and I wrote code which aggregated and composed data
      from various microservices to simplify complex, paperwork-heavy workflows.
 
@@ -61,6 +59,7 @@
      The work focused on human-readable URLs, rewriting database queries and building indexes for
      clarity and efficiency, and other SEO and performance fundamentals, as well as extracting
      shared templates and refactoring old code for better semantics and maintainability.
+
 ** Flock
    - Rails 4
    - Middleman
@@ -79,9 +78,8 @@
      in those regards.
 ** Lawfetcher
    - JavaScript
-   - karma & jasmine unit tests
-   - browserify
    - regular expressions
+   - browserify
 
      A freelance project in collaboration with Emeritus Prof. Peter W. Martin of Cornell Law. A free
      tool for legal writing, it semantically parses US legal citations and programmatically builds
@@ -97,7 +95,9 @@
    - Ruby & Rails
    - JavaScript, HTML, & CSS
 
-The O.G. programmer bootcamp. Mule Deer shout out!!!!!!
+     An immersive 19-week web development program. Over the final 9 weeks alone, I worked over 1000
+     hours at the San Francisco campus in an intensely collaborative environment that emphasized
+     hands-on learning, empathy, communication, and problem-solving.
 
 ** Cornell College, class of '08
 -  B.A. in English, minor in Music
