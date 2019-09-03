@@ -22,7 +22,7 @@ const IndexPage = () => (
         a team that cares about ethics, collaboration, and quality.
       </Nameplate>
 
-      <div className="block-group work-experience">
+      <div id="work-experience" className="block-group">
         <Entry title="SigFig"
                titleLink="https://sigfig.com"
                dates="Jul '17-Present"
@@ -132,6 +132,46 @@ const IndexPage = () => (
           quality and professionalism of my code.
 
         </Entry>
+      </div>
+      <div id="education" className="block-group">
+        <Entry title="Dev Bootcamp" titleLink="https://en.wikipedia.org/wiki/Dev_Bootcamp"
+               dates="Jul-Sept '14"
+               skills={[
+                 "Programming & web fundamentals",
+                 "git & *nix CLI",
+                 "Ruby & Rails",
+                 "JavaScript, HTML, & CSS",
+               ]}>
+
+          An immersive 19-week web development program. Over the final 9 weeks alone, I worked over
+          1000 hours at the San Francisco campus in an intensely collaborative environment that
+          emphasized hands-on learning, empathy, communication, and problem-solving.
+
+        </Entry>
+        <Entry title="Portland Community College" titleLink="www.pcc.edu"
+               dates="Nov '12-Jun '14"
+               skills={[]}>
+
+          While working as an art teacher, independently pursued interests in Statistics and Computer Science. Where
+          I discovered how much I enjoy programming.
+
+        </Entry>
+
+        <Entry title="Cornell College" titleLink="https://cornellcollege.edu/"
+               dates="Class of '08"
+               skills={[]}>
+
+        B.A. in English, minor in Music.
+        Received 2007 Winnifred Van Etten Award for Creative and Scholarly Excellence.
+
+        <br/><br/>
+
+        Though seemingly unrelated, my studies centered on an interest in how human expression exists within
+        and is influenced by logically analyzable systems like syntax, music theory, or grammar. I have found
+        this to be surprisingly good preparation for the work of programming.
+
+        </Entry>
+
       </div>
     </div>
   </>
