@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import Entry from "../components/entry"
-import Nameplate from "../components/header"
+import Nameplate from "../components/nameplate"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
