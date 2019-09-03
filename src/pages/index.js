@@ -2,7 +2,7 @@ import React from "react"
 import Helmet from "react-helmet"
 
 import Entry from "../components/entry"
-import Header from "../components/header"
+import Nameplate from "../components/header"
 import SEO from "../components/seo"
 
 const IndexPage = () => (
@@ -13,7 +13,14 @@ const IndexPage = () => (
 
     <div className="block-group container">
       <SEO title="Alex Birdsall, Software Engineer" />
-      <Header/>
+      <Nameplate
+        name="Alex Birdsall"
+        title="Full Stack Web Developer"
+        phone="(802) 989-5647"
+        email="ambirdsall@gmail.com">
+        I care about solving problems and I hope to build beautiful, logically interesting things, working in
+        a team that cares about ethics, collaboration, and quality.
+      </Nameplate>
 
       <div className="block-group work-experience">
         <Entry title="SigFig"
