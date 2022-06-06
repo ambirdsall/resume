@@ -16,21 +16,19 @@ const Resume = () => (
           "cypress",
           "redis"
         ]}>
-        For two and a half years, I worked as a full-stack developer at Indiegogo. I helped rewrite the
-        legacy payment processing and checkout experience from angularJS to vue; implementing a new suite of
-        integration tests (including its CI and github integration) using Cypress, leading to faster,
+        As a full-stack developer at Indiegogo, I helped rewrite the
+        legacy checkout UI from angularJS to vue; implemented a new suite of
+        Cypress integration tests, leading to faster,
         cheaper test runs, fewer test flakes, and improved developer experience. I personally designed and
-        implemented a total rewrite of the advertising metric gathering campaigners rely on after a facebook
-        policy change, which involved frontend changes, database updates, a new set of API interactions, and
-        extremely high-volume async job processing. It also required close coordination with nontechnical
-        stakeholders both internal and external and thorough documentation. I played a key role in the
-        design and implementation of an upcoming product, a new web app to help campaigners manage
-        inventory, shipping, and backer communication. I specifically was responsible for the new product's
+        implemented a total rewrite of the advertising metric system campaigners rely on after a facebook
+        policy change, which required significant frontend changes,
+        extremely high-volume async job processing, and close coordination with nontechnical
+        stakeholders both internal and external. I played a key role
+        designing and building an upcoming product to help campaigners manage
+        inventory, shipping, and backer communication. I specifically owned the new product's
         frontend architecture and testing strategy. With its Elixir backend and an aggressively prerendered
         vue frontend, the site performance dramatically outperformed the legacy Indiegogo website
-        (particularly its time to first byte, largest contentful paint, and time to interactive
-        measurements) while using similar technologies to minimize the learning curve for other devs and
-        unblock future "upstreaming" of improvements to the indiegogo.com frontend.
+        while using similar technologies to minimize the learning curve for other devs.
       </Entry>
       <Entry title="SigFig"
         titleLink="https://sigfig.com"
