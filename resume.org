@@ -15,7 +15,29 @@
 #+creator:
 #+latex_header:
 
-* Work Experience (5 years)
+* Work Experience
+** Indiegogo
+- rails
+- vue/nuxt
+- elixir
+- typescript
+- cypress
+- redis
+
+For two and a half years, I worked as a full-stack developer at Indiegogo. I helped rewrite the
+legacy payment processing and checkout experience from angularJS to vue; I implemented a new suite
+of integration tests (including its CI and github integration) using Cypress, leading to faster test
+runs (and thus cheaper CI bills), fewer test flakes, and a more interactive, debugger-friendly
+developer experience; I personally designed and implemented a total rewrite of the advertising
+system campaigners rely on after facebook changed their policies in the wake of iOS 14 privacy
+updates, which required close coordination with nontechnical stakeholders both internal and
+external; and I participated in the design and implementation of an upcoming product, a new web app
+to help campaigners manage inventory, shipping, and backer communication. I specifically was
+responsible for the new product's frontend architecture and testing strategy. With its Elixir
+backend and an aggressively prerendered vue frontend, the site performance dramatically outperformed
+the legacy Indiegogo website (particularly its time to first byte, largest contentful paint, and
+time to interactive measurements) while using similar technologies to minimize the learning curve
+for other devs and unblock future "upstreaming" of improvements to the indiegogo.com frontend.
 ** SigFig
    - typescript
    - scala
@@ -37,7 +59,6 @@
      Soon after, I transfered over to work on building the Scala backend service which supports that
      product. I helped spec out the REST API, and I wrote code which aggregated and composed data
      from various microservices to simplify complex, paperwork-heavy workflows.
-
 ** Legal Information Institute, Cornell University Law School
    - ES2015
    - build scripts

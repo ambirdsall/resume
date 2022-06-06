@@ -20,9 +20,8 @@ const IndexPage = () => (
         title="Full Stack Web Developer"
         phone="(802) 989-5647"
         email="ambirdsall@gmail.com">
-        I care about solving problems and I hope to build beautiful, logically
-        interesting things, working in a team that cares about ethics,
-        collaboration, simplicity, and quality.
+        I care about solving problems and I hope to build beautiful, logically interesting things, working in
+        a team that cares about ethics, collaboration, simplicity, and user experience.
       </Nameplate>
 
       <Resume/>
