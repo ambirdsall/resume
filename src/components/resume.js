@@ -5,6 +5,25 @@ import Entry from "../components/entry"
 const Resume = () => (
   <>
     <div id="work-experience" className="block-group">
+      <Entry title="Airbyte"
+        titleLink="https://airbyte.com"
+        dates="Aug '22-Mar '24"
+        skills={[
+          "typescript",
+          "react",
+          "cypress",
+          "python 3",
+          "java"
+        ]}>
+        At Airbyte, I worked on a variety of projects in a primarily frontend role. I
+        consistently worked to improve code quality in the company's react web app; shipped
+        the UI for a DBT cloud integration on an extremely tight schedule; restructured
+        the cypress end-to-end test suite and rewrite its build system to allow better
+        code reuse and type safety; and expanded the feature set of Airbyte's Connector
+        Builder, including both improvements to its complex and dynamic editing UI, and
+        backend updates to both its java server endpoints and the python low-code
+        connector CDK which parses user-authored connector definitions.
+      </Entry>
       <Entry title="Indiegogo"
         titleLink="https://indiegogo.com"
         dates="Feb '20-May '22"
@@ -16,19 +35,19 @@ const Resume = () => (
           "cypress",
           "redis"
         ]}>
-        As a full-stack developer at Indiegogo, I helped rewrite the
-        legacy checkout UI from angularJS to vue; implemented a new suite of
-        Cypress integration tests, leading to faster,
-        cheaper test runs, fewer test flakes, and improved developer experience. I personally designed and
-        implemented a total rewrite of the advertising metric system campaigners rely on after a facebook
-        policy change, which required significant frontend changes,
-        extremely high-volume async job processing, and close coordination with nontechnical
-        stakeholders both internal and external. I played a key role
-        designing and building an upcoming product to help campaigners manage
-        inventory, shipping, and backer communication. I specifically owned the new product's
-        frontend architecture and testing strategy. With its Elixir backend and an aggressively prerendered
-        vue frontend, the site performance dramatically outperformed the legacy Indiegogo website
-        while using similar technologies to minimize the learning curve for other devs.
+        As a full-stack developer at Indiegogo, I helped rewrite the legacy checkout UI
+        from angularJS to vue; implemented a new suite of Cypress integration tests,
+        leading to faster, cheaper test runs, fewer test flakes, and improved developer
+        experience. I personally designed and implemented a total rewrite of the
+        advertising metric system campaigners rely on after a facebook policy change,
+        which required significant frontend changes, extremely high-volume async job
+        processing, and close coordination with nontechnical stakeholders both internal
+        and external. I played a key role designing and building an upcoming product to
+        help campaigners manage inventory, shipping, and backer communication. I
+        specifically owned the new product's frontend architecture and testing strategy.
+        With its Elixir backend and an aggressively prerendered vue frontend, the site
+        performance dramatically outperformed the legacy Indiegogo website while
+        minimizing the learning curve for other devs.
       </Entry>
       <Entry title="SigFig"
         titleLink="https://sigfig.com"

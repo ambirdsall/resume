@@ -15,7 +15,27 @@
 #+creator:
 #+latex_header:
 
+* TODO add export-friendly metadata to entries
+- dates
+- urls
+
 * Work Experience
+** Airbyte
+- typescript
+- react
+- cypress
+- python 3
+- java
+
+At Airbyte, I worked on a variety of projects in a primarily frontend role. I
+consistently worked to improve code quality in the company's react web app; shipped
+the UI for a DBT cloud integration on an extremely tight schedule; restructured
+the cypress end-to-end test suite and rewrite its build system to allow better
+code reuse and type safety; and expanded the feature set of Airbyte's Connector
+Builder, including both improvements to its complex and dynamic editing UI, and
+backend updates to both its java server endpoints and the python low-code
+connector CDK which parses user-authored connector definitions.
+
 ** Indiegogo
 - rails
 - vue/nuxt
@@ -37,7 +57,8 @@ responsible for the new product's frontend architecture and testing strategy. Wi
 backend and an aggressively prerendered vue frontend, the site performance dramatically outperformed
 the legacy Indiegogo website (particularly its time to first byte, largest contentful paint, and
 time to interactive measurements) while using similar technologies to minimize the learning curve
-for other devs and unblock future "upstreaming" of improvements to the indiegogo.com frontend.
+for other devs and unblock future upstreaming" of improvements to the indiegogo.com frontend.
+
 ** SigFig
    - typescript
    - scala
@@ -59,6 +80,7 @@ for other devs and unblock future "upstreaming" of improvements to the indiegogo
      Soon after, I transfered over to work on building the Scala backend service which supports that
      product. I helped spec out the REST API, and I wrote code which aggregated and composed data
      from various microservices to simplify complex, paperwork-heavy workflows.
+
 ** Legal Information Institute, Cornell University Law School
    - ES2015
    - build scripts
@@ -70,6 +92,7 @@ for other devs and unblock future "upstreaming" of improvements to the indiegogo
      the build process to transpile modular ES2015 application code and tests; and implemented a
      [[http://guides.rubyonrails.org/asset_pipeline.html#what-is-fingerprinting-and-why-should-i-care-questionmark][filename fingerprinting]] system to manage browser caching, enabling both frequent, iterative
      code deployment and efficient loading.
+
 ** The Emoji Foundation
    - php 7
    - Apache
@@ -97,6 +120,7 @@ for other devs and unblock future "upstreaming" of improvements to the indiegogo
      advocate for consistency of data modeling, clear and explicit API boundaries, and well-designed
      abstraction on a codebase, initially built by foreign contractors, that left much to be desired
      in those regards.
+
 ** Lawfetcher
    - JavaScript
    - regular expressions
