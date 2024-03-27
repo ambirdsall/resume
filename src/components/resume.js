@@ -37,17 +37,14 @@ const Resume = () => (
         ]}>
         As a full-stack developer at Indiegogo, I helped rewrite the legacy checkout UI
         from angularJS to vue; implemented a new suite of Cypress integration tests,
-        leading to faster, cheaper test runs, fewer test flakes, and improved developer
-        experience. I personally designed and implemented a total rewrite of the
-        advertising metric system campaigners rely on after a facebook policy change,
-        which required significant frontend changes, extremely high-volume async job
-        processing, and close coordination with nontechnical stakeholders both internal
-        and external. I played a key role designing and building an upcoming product to
-        help campaigners manage inventory, shipping, and backer communication. I
-        specifically owned the new product's frontend architecture and testing strategy.
-        With its Elixir backend and an aggressively prerendered vue frontend, the site
-        performance dramatically outperformed the legacy Indiegogo website while
-        minimizing the learning curve for other devs.
+        improving speed, cost, reliability, and DX. I personally designed and implemented
+        a total rewrite of the advertising metric system campaigners rely on after a
+        facebook policy change; this required significant code changes, high-volume async
+        job processing, and close coordination with nontechnical stakeholders both
+        internal and external. I played a key role designing and building a new product to
+        help campaigners manage inventory, shipping, and communication. The site significantly
+        outperformed the main Indiegogo website while minimizing the learning curve for
+        other devs.
       </Entry>
       <Entry title="SigFig"
         titleLink="https://sigfig.com"
