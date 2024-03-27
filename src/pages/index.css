@@ -94,6 +94,11 @@ body {
 .entry--context { width: 30%;}
 .entry--body { width: 70%; }
 
+@media print {
+  .entry--context { width: 20%;}
+  .entry--body { width: 80%; }
+}
+
 .entry {
   page-break-inside: avoid;
 }
@@ -131,6 +136,12 @@ body {
       text-align: left;
       padding-left: 0.25em;
     }
+
+@media print {
+  .nameplate__name {
+    font-size: 2em;
+  }
+}
 
 .entry--title { color: #a73832; }
 .entry--title > a { color: #a73832; }
