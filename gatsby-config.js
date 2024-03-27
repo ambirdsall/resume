@@ -2,7 +2,7 @@ module.exports = {
   pathPrefix: `/resume`,
   siteMetadata: {
     title: `Alex Birdsall :: Software Engineer`,
-    description: `Resume of Alex Birdsall, San Francisco-based Software Engineer`,
+    description: `Resume of Alex Birdsall, a Software Engineer based in Portland, Oregon`,
     author: `@ambirdsall`,
   },
   plugins: [
