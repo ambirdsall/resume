@@ -4,7 +4,12 @@
 * MIT License
 */
 /* Border-box-sizing */
-.block-group, .block, .block-group:after, .block:after, .block-group:before, .block:before {
+.block-group,
+.block,
+.block-group:after,
+.block:after,
+.block-group:before,
+.block:before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -14,7 +19,8 @@
 .block-group {
   *zoom: 1;
 }
-.block-group:before, .block-group:after {
+.block-group:before,
+.block-group:after {
   display: table;
   content: "";
   line-height: 0;
@@ -73,40 +79,77 @@ body {
   }
 }
 
-.entry--title, .context__dates { margin-top: 1rem; }
-.entry--title { margin-bottom: 0; }
-.entry--description, .context__skills { margin-top: 0.5em; }
+.entry--title,
+.context__dates {
+  margin-top: 1rem;
+}
+.entry--title {
+  margin-bottom: 0;
+}
+.entry--description,
+.context__skills {
+  margin-top: 0.5em;
+}
 
 .entry--context {
   text-align: right;
   padding-right: 1em;
 }
 
-.intro { margin-top: 4em; }
-    .contact-info--item { width: 50%; }
-        /* FIXME: m-t is spacing w/r/t nameplate__title, not contact-info */
-        .intro--description { margin-top: 5em; }
-
-@media print {
-  .intro { margin-top: 1em; }
+.intro {
+  margin-top: 4em;
+}
+.contact-info--item {
+  width: 50%;
+}
+/* FIXME: m-t is spacing w/r/t nameplate__title, not contact-info */
+.intro--description {
+  margin-top: 5em;
 }
 
-.entry--context { width: 30%;}
-.entry--body { width: 70%; }
+@media print {
+  .intro {
+    margin-top: 0;
+  }
+
+  .intro--description {
+    margin-top: 3em;
+  }
+
+  h2 {
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+  }
+
+  [id="work-experience"] > .block:first-child {
+    margin-top: 0;
+  }
+}
+
+.entry--context {
+  width: 30%;
+}
+.entry--body {
+  width: 70%;
+}
 
 @media print {
-  .entry--context { width: 20%;}
-  .entry--body { width: 80%; }
+  .entry--context {
+    width: 20%;
+  }
+  .entry--body {
+    width: 80%;
+  }
 }
 
 .entry {
   page-break-inside: avoid;
 }
-  .entry:first-child {
-    border-top: 1px solid #ddd;
-    margin-top: 2em;
-    padding-top: 0.8em;
-  }
+.entry:first-child {
+  border-top: 1px solid #ddd;
+  margin-top: 2em;
+  padding-top: 0.8em;
+}
 
 /******************************************************************************\
                                   Typography
@@ -115,27 +158,31 @@ body {
   /* TODO: correct for final body text font */
   line-height: 140%;
   font-size: 13pt;
-  font-family: 'Droid Serif', serif;
+  font-family: "Droid Serif", serif;
 }
 
-.intro--nameplate { text-align: center; }
-.intro--description { text-align: center; }
-    .nameplate__title {
-      font-weight: 400;
-      font-family: 'Droid Sans', sans-serif;
-      color: #a73832;
-    }
-    .nameplate__name {
-      font-size: 3em;
-    }
-    .item__left {
-      text-align: right;
-      padding-right: 2.25em;
-    }
-    .item__right {
-      text-align: left;
-      padding-left: 0.25em;
-    }
+.intro--nameplate {
+  text-align: center;
+}
+.intro--description {
+  text-align: center;
+}
+.nameplate__title {
+  font-weight: 400;
+  font-family: "Droid Sans", sans-serif;
+  color: #a73832;
+}
+.nameplate__name {
+  font-size: 3em;
+}
+.item__left {
+  text-align: right;
+  padding-right: 2.25em;
+}
+.item__right {
+  text-align: left;
+  padding-left: 0.25em;
+}
 
 @media print {
   .nameplate__name {
@@ -143,11 +190,15 @@ body {
   }
 }
 
-.entry--title { color: #a73832; }
-.entry--title > a { color: #a73832; }
+.entry--title {
+  color: #a73832;
+}
+.entry--title > a {
+  color: #a73832;
+}
 
 .context__skills {
   color: #777;
   font-weight: 300;
-  font-family: 'Droid Sans', sans-serif;
+  font-family: "Droid Sans", sans-serif;
 }
