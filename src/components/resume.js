@@ -6,6 +6,28 @@ const Resume = () => (
   <>
     <div id="work-experience" className="block-group">
       <Entry
+        title="Artisan"
+        titleLink="https://artisan.co"
+        dates="Jul '24-present"
+        skills={[
+          "python",
+          "FastAPI",
+          "postgresql",
+          "DigitalOcean",
+          "docker",
+          "typescript",
+          "react",
+        ]}
+      >
+        I am currently working as a full-stack developer at Artisan, a pre-series-A
+        startup automating sales outreach. I've worn many hats, working on every part of
+        the stack to quickly ship a wide variety of projects to production, from designing
+        and building complex new features (including outreach through external services,
+        requiring custom authentication as well as complex scheduling, rate-limiting, and
+        error handling logic), to handling cloud infrastructure issues, database modeling
+        and performance optimization, and working on the react UI.
+      </Entry>
+      <Entry
         title="Airbyte"
         titleLink="https://airbyte.com"
         dates="Aug '22-Mar '24"
