@@ -1,7 +1,7 @@
 import React from "react"
 
 const toSkill = s => <>{s}<br/></>
-const formatDate = dateString => dateString.replace("'", "’").replace("-", "–")
+const formatDate = dateString => dateString.replaceAll("'", "’").replace("-", "–").replaceAll(" ", " ")
 
 const Entry = ({
   title,
