@@ -8,7 +8,7 @@ const Resume = () => (
       <Entry
         title="Artisan"
         titleLink="https://artisan.co"
-        dates="Jul '24-present"
+        dates="Jul '24-Dec '24"
         skills={[
           "python",
           "FastAPI",
@@ -19,13 +19,16 @@ const Resume = () => (
           "react",
         ]}
       >
-        I am currently working as a full-stack developer at Artisan, a pre-series-A
-        startup automating sales outreach. I've worn many hats, working on every part of
-        the stack to quickly ship a wide variety of projects to production, from designing
-        and building complex new features (including outreach through external services,
-        requiring custom authentication as well as complex scheduling, rate-limiting, and
-        error handling logic), to handling cloud infrastructure issues, database modeling
-        and performance optimization, and working on the react UI.
+        I most recently worked as a full-stack developer at Artisan, a pre-series-A
+        startup automating sales outreach that proved not to be a good fit for my values.
+        In my time there I wore many hats, working on every part of the stack to quickly
+        ship a wide variety of projects to production. I designed and built complex new
+        features, including a full rewrite of the lead outreach sequence model from a
+        hardcoded three-email sequence to fully custom workflows supporting branching
+        logic, and added outreach through external services, requiring custom
+        authentication as well as complex scheduling, rate-limiting, and error handling
+        logic. I also handled cloud infrastructure issues, database modeling and
+        performance optimization, and working on the react UI.
       </Entry>
       <Entry
         title="Airbyte"
