@@ -135,10 +135,10 @@ body {
 
 @media print {
   .entry--context {
-    width: 20%;
+    width: 21%;
   }
   .entry--body {
-    width: 80%;
+    width: 79%;
   }
 }
 
