@@ -1,6 +1,5 @@
 import React from "react"
 
-const toSkill = s => <>{s}<br/></>
 const formatDate = dateString => dateString.replaceAll("'", "’").replace("-", "–").replaceAll(" ", " ")
 
 const Entry = ({
@@ -10,23 +9,19 @@ const Entry = ({
   skills,
   children,
 }) => (
-  <div className="block entry">
-    <div className="block entry--context">
-      <div className="context__dates">{formatDate(dates)}</div>
-      <div className="context__skills">
-        {skills.map(toSkill)}
-      </div>
+  <div className="entry">
+    <h4 className="entry-title">
+      <a href={titleLink}>
+        {title}
+      </a>
+    </h4>
+    <div className="entry-dates">{formatDate(dates)}</div>
+    <div className="">
+      {skills}
     </div>
-    <div className="block entry--body">
-      <h3 className="entry--title">
-        <a href={titleLink}>
-          {title}
-        </a>
-      </h3>
-      <p className="entry--description">
-        {children}
-      </p>
-    </div>
+    <p className="">
+      {children}
+    </p>
   </div>
 )
 

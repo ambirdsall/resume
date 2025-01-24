@@ -1,204 +1,135 @@
-/*! PocketGrid 1.1.0
-*
-* Copyright 2013 Arnaud Leray
-* MIT License
-*/
-/* Border-box-sizing */
-.block-group,
-.block,
-.block-group:after,
-.block:after,
-.block-group:before,
-.block:before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+/* * global */
+/* ** text styles, global variables, etc */
+body {
+  --brick: oklch(50.05% 0.147 26.87);
+  --brick-fallback: #a73832;
+  --dark-brick: oklch(30.05% 0.147 26.87);
+  --dark-brick-fallback: #640000;
+  --gold: oklch(69% 0.147 96.87);
+  --gold-fallback: #b69a00;
+  --grey: #888;
+  --dark-grey: #444;
+  --sans-serif: "Droid Sans", sans-serif;
+  --serif: "Droid Serif", serif;
+  background: #fffffa;
+  color: #111;
+  line-height: 140%;
+  font-size: 13pt;
+  font-family: var(--serif);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-/* Clearfix */
-.block-group {
-  *zoom: 1;
+h1 {
+  font-size: 3em;
 }
-.block-group:before,
-.block-group:after {
-  display: table;
-  content: "";
-  line-height: 0;
+h2 {
+  font-weight: 400;
+  font-family: var(--sans-serif);
+  color: var(--brick, var(--brick-fallback));
 }
-.block-group:after {
-  clear: both;
+h3 {
+  color: var(--dark-brick, var(--dark-brick-fallback));
+  border-bottom: 2px solid var(--gold, var(--gold-fallback));
 }
 
-.block-group {
-  /* ul/li compatibility */
-  list-style-type: none;
+/* icons */
+svg {
+  color: var(--grey);
+  margin-right: 0.5em;
+}
+
+/* * header */
+/* ** contact info */
+.contact-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-items: space-between;
+  line-height: 2;
+}
+.contact {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  flex-direction: row;
+  margin-right: 3em;
+  page-break-inside: avoid;
+  text-decoration: none;
+}
+.contact svg {
+  color: var(--brick, var(--brick-fallback));
+}
+
+/* ** key skills */
+.key-skills {
+  --spacing: 0.75em;
+  max-width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  color: var(--dark-grey);
+}
+
+.key-skills .skillset {
+  margin-bottom: var(--spacing);
+  display: inline-block;
+}
+
+.key-skills h4 {
+  font-family: var(--sans-serif);
+  font-size: 1.1em;
+  margin: 0 1em 0 0;
+  text-decoration: underline;
+}
+
+.key-skills ul {
   padding: 0;
   margin: 0;
 }
 
-/* Nested grid */
-.block-group > .block-group {
-  clear: none;
-  float: left;
-  margin: 0 !important;
+.key-skills li {
+  margin: 0;
+  list-style: none;
 }
 
-/* Default block */
-.block {
-  float: left;
-  width: 100%;
+/* * resume */
+/* ** layout */
+.resume {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 61.8% 38.2%; /* golden ratio */
 }
 
-/******************************************************************************\
-                                Global Styles
-\******************************************************************************/
-
-body {
-  background: #fffffa;
-  color: #111;
-}
-
-/******************************************************************************\
-                                    Layout
-\******************************************************************************/
-
-.container {
-  width: 60%;
-  margin-left: 20%;
-  margin-bottom: 2em;
-}
-
-@media print {
-  body {
-    font-size: 11pt;
-  }
-
-  .container {
-    width: 90%;
-    margin-left: 5%;
+@media screen and (max-width: 1000px) {
+  .resume {
+    grid-template-columns: repeat(2, 1fr); /* equal columns */
   }
 }
 
-.entry--title,
-.context__dates {
-  margin-top: 1rem;
-}
-.entry--title {
-  margin-bottom: 0;
-}
-.entry--description,
-.context__skills {
-  margin-top: 0.5em;
-}
-
-.entry--context {
-  text-align: right;
-  padding-right: 1em;
-}
-
-.intro {
-  margin-top: 4em;
-}
-.contact-info--item {
-  width: 50%;
-}
-/* FIXME: m-t is spacing w/r/t nameplate__title, not contact-info */
-.intro--description {
-  margin-top: 5em;
-}
-
-@media print {
-  .intro {
-    margin-top: 0;
-  }
-
-  .intro--description {
-    margin-top: 3em;
-  }
-
-  h2 {
-    margin-bottom: 0.5em;
-    margin-top: 0.5em;
-  }
-
-  [id="work-experience"] > .block:first-child {
-    margin-top: 0;
+@media screen and (max-width: 800px) {
+  .resume {
+    grid-template-columns: 1fr; /* Single column layout */
   }
 }
 
-.entry--context {
-  width: 30%;
-}
-.entry--body {
-  width: 70%;
-}
-
-@media print {
-  .entry--context {
-    width: 21%;
-  }
-  .entry--body {
-    width: 79%;
-  }
-}
-
+/* ** entry */
 .entry {
   page-break-inside: avoid;
 }
-.entry:first-child {
-  border-top: 1px solid #ddd;
-  margin-top: 2em;
-  padding-top: 0.8em;
-}
 
-/******************************************************************************\
-                                  Typography
-\******************************************************************************/
-body {
-  /* TODO: correct for final body text font */
-  line-height: 140%;
-  font-size: 13pt;
-  font-family: "Droid Serif", serif;
+.entry-title {
+  margin-bottom: 0;
 }
-
-.intro--nameplate {
-  text-align: center;
+.entry-title > a {
+  color: var(--brick, var(--brick-fallback));
+  margin-bottom: 2px;
 }
-.intro--description {
-  text-align: center;
-}
-.nameplate__title {
-  font-weight: 400;
-  font-family: "Droid Sans", sans-serif;
-  color: #a73832;
-}
-.nameplate__name {
-  font-size: 3em;
-}
-.item__left {
-  text-align: right;
-  padding-right: 2.25em;
-}
-.item__right {
-  text-align: left;
-  padding-left: 0.25em;
+.entry-dates {
+  color: var(--dark-grey);
+  font-family: var(--sans-serif);
 }
 
 @media print {
-  .nameplate__name {
-    font-size: 2em;
-  }
-}
-
-.entry--title {
-  color: #a73832;
-}
-.entry--title > a {
-  color: #a73832;
-}
-
-.context__skills {
-  color: #777;
-  font-weight: 300;
-  font-family: "Droid Sans", sans-serif;
 }
