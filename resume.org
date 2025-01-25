@@ -15,19 +15,19 @@
 #+creator:
 #+latex_header:
 
+* contact info
 [[tel:8029895647][(802) 989-5647]]  |  [[mailto:ambirdsall@gmail.com][ambirdsall@gmail.com]]  | [[https://www.linkedin.com/in/ambirdsall/][LinkedIn Profile]]
 
-**Summary**
+* **Summary**
 Full-stack web developer with 9+ years of experience building scalable, user-friendly applications across diverse industries. Proficient in Python, TypeScript, React, and cloud technologies. Demonstrated success in designing and building complex features, optimizing systems, and collaborating with both nontechnical colleagues and other engineers to deliver high-impact solutions. Passionate about solving problems for users and developers through ethical and efficient development.
 
-**Key Skills**
+* **Key Skills**
 - Programming Languages: Python, TypeScript, Ruby, Bash, Java, Scala, PHP
 - Frameworks & Libraries: FastAPI, React, Rails, Vue/Nuxt, AngularJS, Cypress
 - Tools & Technologies: Docker, PostgreSQL, Redis, GCP, AWS, DigitalOcean
 - Other: API design, database optimization, CI/CD pipelines, end-to-end testing
 
 * Professional Experience
-
 ** Artisan
 Full-Stack Developer, python + typescript
 Jul 2024 – Dec 2024
@@ -52,7 +52,7 @@ Feb 2020 – May 2022
 - Led a complete rewrite of the advertising metrics system in response to external policy changes, enhancing campaign performance insights for users.
 - Designed and built a new inventory management tool for campaigners, outperforming the main site in speed and usability.
 - Migrated a legacy AngularJS checkout UI to Vue, improving performance and maintainability.
-- Built and maintained a robust suite of Cypress integration tests, reducing test runtime by 40%.
+- Built and maintained a suite of Cypress integration tests, significantly reducing transient test failures.
 
 ** SigFig
 Frontend Engineer, react/angularJS + typescript
