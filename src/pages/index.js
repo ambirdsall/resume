@@ -145,7 +145,7 @@ const IndexPage = () => (
       <div className="left">
         <h3>Experience</h3>
         <Entry
-          title="Artisan"
+          title="Artisan AI"
           titleLink="https://artisan.co"
           dates="Jul '24-Dec '24"
           skills={<>
@@ -159,17 +159,12 @@ const IndexPage = () => (
             <SiDigitalocean/>
           </>}
         >
-          I most recently worked as a full-stack developer at Artisan, a pre-series-A
-          startup automating sales outreach. I enjoyed the programming, though it proved to
-          not be a good fit in other ways. In my time there I wore many hats, working on
-          every part of the stack to quickly ship a wide variety of projects to production.
-          I designed and built complex new features, including a full rewrite of the lead
-          outreach sequence model from a hardcoded three-email sequence to fully custom
-          workflows supporting branching logic, and added outreach through external
-          services, requiring custom authentication as well as complex scheduling,
-          rate-limiting, and error handling logic. I also handled cloud infrastructure
-          issues, database modeling and performance optimization, and added features to
-          the react UI.
+          <ul>
+            <li>Designed and implemented a full rewrite of the lead outreach sequence model, transitioning from a hardcoded system to customizable workflows with branching logic.</li>
+            <li>Expanded outreach capabilities by integrating external services with custom authentication, scheduling, and error handling.</li>
+            <li>Optimized database performance and resolved critical cloud infrastructure issues.</li>
+            <li>Delivered complex features across the stack, including enhancements to a React-based UI.</li>
+          </ul>
         </Entry>
         <Entry
           title="Airbyte"
@@ -184,15 +179,11 @@ const IndexPage = () => (
             <SiGooglecloud/>
           </>}
         >
-          At Airbyte, I worked on a variety of projects in a primarily frontend
-          role. I consistently worked to improve code quality in the company's
-          react web app; shipped the UI for a DBT cloud integration on an
-          extremely tight schedule; restructured the cypress end-to-end test suite
-          and rewrite its build system to allow better code reuse and type safety;
-          and expanded the feature set of Airbyte's Connector Builder, including
-          both improvements to its complex and dynamic editing UI, and backend
-          updates to both its java server endpoints and the python low-code
-          connector CDK which parses user-authored connector definitions.
+          <ul>
+            <li>Shipped the UI for a DBT Cloud integration under a tight deadline, ensuring high-quality delivery.</li>
+            <li>Restructured and modernized the Cypress end-to-end test suite for improved reliability and maintainability.</li>
+            <li>Enhanced the Connector Builder tool, implementing dynamic UI updates and backend changes to support user-authored connector definitions.</li>
+          </ul>
         </Entry>
         <Entry
           title="Indiegogo"
@@ -211,17 +202,12 @@ const IndexPage = () => (
             <SiAmazonwebservices/>
           </>}
         >
-          As a full-stack developer at Indiegogo, I helped rewrite the legacy
-          checkout UI from angularJS to vue; implemented a new suite of Cypress
-          integration tests, improving speed, cost, reliability, and DX. I
-          personally designed and implemented a total rewrite of the advertising
-          metric system campaigners rely on after a facebook policy change; this
-          required significant code changes, high-volume async job processing, and
-          close coordination with nontechnical stakeholders both internal and
-          external. I played a key role designing and building a new product to
-          help campaigners manage inventory, shipping, and communication. The site
-          significantly outperformed the main Indiegogo website while minimizing
-          the learning curve for other devs.
+          <ul>
+            <li>Led a complete rewrite of the advertising metrics system in response to external policy changes, enhancing campaign performance insights for users.</li>
+            <li>Designed and built a new inventory management tool for campaigners, outperforming the main site in speed and usability.</li>
+            <li>Migrated a legacy AngularJS checkout UI to Vue, improving performance and maintainability.</li>
+            <li>Built and maintained a suite of Cypress tests, significantly improving integration test reliability.</li>
+          </ul>
         </Entry>
         <Entry
           title="SigFig"
@@ -236,17 +222,11 @@ const IndexPage = () => (
             <SiReact/>
           </>}
         >
-          Working primarily as a frontend engineer at a digital wealth management
-          startup, I helped redesign the build system of a large whitelabeled
-          typescript app to use ES2015 modules and manage dependencies with npm or
-          yarn; I converted thousands of files to the new system during the
-          migration. I personally refactored the build system to remove its gulp
-          dependency, dramatically simplifying configuration work. I also designed
-          the frontend A/B testing API and rewrote its integration with a
-          3rd-party assignment backend, using a more modular design to decouple
-          internal code from the idiosyncracies of that vendor. I helped launch a
-          new typescript/react frontend application, including work on its Scala
-          REST API.
+          <ul>
+            <li>Redesigned a large TypeScript/angularJS application’s build system: simplifying different whitelabeled builds with more explicit, modular overrides; migrating to ES2015 modules; and simplifying multilayered gulp+webpack build tooling to just webpack.</li>
+            <li>Designed an A/B testing API, decoupling internal logic from a third-party backend for improved flexibility and maintainability.</li>
+            <li>Contributed to the launch of a React frontend and its Scala-based REST API.</li>
+          </ul>
         </Entry>
       </div>
       <div className="right">
@@ -260,7 +240,7 @@ const IndexPage = () => (
           <dl>
             <li>
               <dt><a href="law.cornell.edu/rio">Legal Information Institute, Cornell Law</a></dt>
-              <dd>Enhanced legal citation parsing and developed modular ES2015 application code for a rebranded tool.</dd>
+              <dd>Created a tool for parsing U.S. legal citations, generating direct links to the corresponding source documents.</dd>
             </li>
             <li>
               <dt><a href="https://emojidictionary.emojifoundation.com/">The Emoji Dictionary</a></dt>
@@ -269,10 +249,6 @@ const IndexPage = () => (
             <li>
               <dt><a href="www.helloflock.com">Flock</a></dt>
               <dd>Developed secure integrations with third-party services, managing encryption challenges.</dd>
-            </li>
-            <li>
-              <dt><a href="http://www.access-to-law.com/lawfetcher">Lawfetcher</a></dt>
-              <dd>Created a tool for parsing and linking U.S. legal citations.</dd>
             </li>
             <li>
               <dt><a href="www.magoosh.com">Magoosh</a></dt>
