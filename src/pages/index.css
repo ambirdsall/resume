@@ -19,7 +19,7 @@ body {
   font-family: var(--serif);
   max-width: 1200px;
   margin: 0 auto;
-  padding: 1em;
+  padding: 1em 1.5em;
 }
 
 h1 {
@@ -45,10 +45,12 @@ svg {
   margin-right: 0.5em;
 }
 
-/* ** <dl>, what a concept */
+/* ** lists, what a concept */
 dl, ul {
   list-style-type: circle;
 }
+
+ul { padding: 0; }
 
 dt {
   float: left;
@@ -98,7 +100,6 @@ dd {
 }
 
 .key-skills .skillset {
-  margin-bottom: var(--spacing);
   display: inline-block;
 }
 
@@ -137,6 +138,15 @@ dd {
   .resume {
     grid-template-columns: 1fr; /* Single column layout */
   }
+  .entry:first-child {
+    margin-top: 0;
+  }
+  .entry+.entry {
+    border-top: none;
+  }
+  .entry:not(:last-child), .left {
+    border-bottom: 1px dashed var(--light-grey);
+  }
 }
 
 /* ** entry */
@@ -148,8 +158,8 @@ dd {
   margin-top: 3em;
 }
 
-.entry:not(:last-of-type) {
-border-bottom: 1px dashed var(--light-grey);
+.entry+.entry {
+  border-top: 1px dashed var(--light-grey);
 }
 
 .entry-title {
@@ -189,5 +199,14 @@ border-bottom: 1px dashed var(--light-grey);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+  }
+  .entry:first-child {
+    margin-top: 0;
+  }
+  .entry+.entry {
+    border-top: none;
+  }
+  .entry:not(:last-child), .left {
+    border-bottom: 1px dashed var(--light-grey);
   }
 }
