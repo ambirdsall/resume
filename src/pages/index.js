@@ -10,11 +10,14 @@ import {
 } from "react-icons/fa"
 import {
   SiAngular,
+  SiCss3,
   SiCypress,
   SiDocker,
   SiElixir,
   SiFastapi,
   SiGnubash,
+  SiHtml5,
+  SiJavascript,
   SiLinux,
   SiOpenjdk,
   SiPostgresql,
@@ -50,8 +53,10 @@ const IndexPage = () => (
     <SEO title="Resumé" />
 
     <header>
-      <h1>Alex Birdsall</h1>
-      <h2>Full Stack Web Developer</h2>
+      <div className="whoami">
+        <h1>Alex Birdsall</h1>
+        <h2>Full Stack Web Developer</h2>
+      </div>
       <div className="contact-info">
           <a className="contact" href='ambirdsall.com'>
             <FaGlobe />
@@ -220,6 +225,7 @@ const IndexPage = () => (
         </Entry>
         <Entry
           title="SigFig"
+          jobTitle='Software Engineer, Frontend'
           titleLink="https://sigfig.com"
           dates="Jul '17-Oct '19"
           skills={<>
@@ -242,85 +248,51 @@ const IndexPage = () => (
           new typescript/react frontend application, including work on its Scala
           REST API.
         </Entry>
-        <Entry
-          title="Legal Information Institute, Cornell Law"
-          titleLink="https://law.cornell.edu/rio"
-          dates="Aug '16-Jun '17"
-          skills={[]}
-        >
-          Cornell Law School picked up the Lawfetcher project, rebranding it as
-          RIO (Read It Online) and hiring me to maintain and expand it. I
-          refactored and completed test coverage of the domain logic; wrote code
-          to parse a broader set of citation types and link to more sources;
-          converted the build process to transpile modular ES2015 application code
-          and tests; and implemented a{" "}
-          <a href="http://guides.rubyonrails.org/asset_pipeline.html#what-is-fingerprinting-and-why-should-i-care-questionmark">
-            filename fingerprinting
-          </a>{" "}
-          system to manage browser caching, enabling both frequent, iterative code
-          deployment and efficient loading.
-        </Entry>
-        {/* emoji dictionary */}
-        <Entry
-          title="The Emoji Dictionary"
-          titleLink="https://emojidictionary.emojifoundation.com/"
-          dates="Jan '17-Jun '17"
-          skills={[]}
-        >
-          As a consultant, I did freelance work for The Emoji Foundation's
-          crowdsourced Emoji Dictionary. The work focused on human-readable URLs,
-          rewriting database queries and building indexes for clarity and
-          efficiency, and other SEO and performance fundamentals, as well as
-          extracting shared templates and refactoring old code for better
-          semantics and maintainability.
-        </Entry>
-        {/* Flock */}
-        <Entry
-          title="Flock"
-          titleLink="www.helloflock.com"
-          dates="Jan '16-July '16"
-          skills={[]}
-        >
-          As software engineer for an HR and compliance startup, I worked with the
-          entire stack from stylesheets to server ops. I maintained
-          statically-built marketing sites as well as its Rails app. I personally
-          implemented secure and user-friendly integrations with TraxPayroll and
-          Greenhouse.io, which involved complicated data mapping, multiple forms
-          of encryption, and, at times, working with out-of-date and contradictory
-          documentation.
-        </Entry>
-        {/* lawfetcher */}
-        <Entry
-          title="Lawfetcher"
-          titleLink="http://www.access-to-law.com/lawfetcher"
-          dates="Aug '15-Dec '15"
-          skills={[]}
-        >
-          A freelance project in collaboration with Emeritus Prof. Peter W. Martin
-          of Cornell Law. A free tool for legal writing, it semantically parses US
-          legal citations and programmatically builds direct links to the full
-          text in various free and subscription services.
-        </Entry>
-        {/* magoosh */}
-        <Entry
-          title="Magoosh"
-          titleLink="www.magoosh.com"
-          dates="Jan '15-Mar '15"
-          skills={[]}
-        >
-          I worked a contract job with Magoosh, a leader in online test prep based
-          in Berkeley. I shipped new features in their Rails app, including
-          auto-tagging for support tickets, an instructor dashboard, an in-house
-          A/B testing library, and a photo upload system.
-        </Entry>
       </div>
       <div className="right">
+        <Entry
+          title="Early Career & Freelance Projects"
+          jobTitle="Various Roles"
+          dates="2014-2017"
+          skills={<>
+                  </>}
+        >
+          <dl>
+            <li>
+              <dt><a href="law.cornell.edu/rio">Legal Information Institute, Cornell Law</a></dt>
+              <dd>Enhanced legal citation parsing and developed modular ES2015 application code for a rebranded tool.</dd>
+            </li>
+            <li>
+              <dt><a href="https://emojidictionary.emojifoundation.com/">The Emoji Dictionary</a></dt>
+              <dd>Improved SEO and database performance, optimizing user navigation and search engine indexing.</dd>
+            </li>
+            <li>
+              <dt><a href="www.helloflock.com">Flock</a></dt>
+              <dd>Developed secure integrations with third-party services, managing encryption challenges.</dd>
+            </li>
+            <li>
+              <dt><a href="http://www.access-to-law.com/lawfetcher">Lawfetcher</a></dt>
+              <dd>Created a tool for parsing and linking U.S. legal citations.</dd>
+            </li>
+            <li>
+              <dt><a href="www.magoosh.com">Magoosh</a></dt>
+              <dd>Built new features in a Rails app, including auto-tagging and a custom A/B testing library.</dd>
+            </li>
+          </dl>
+        </Entry>
         <h3>Education</h3>
         <Entry
           title="Dev Bootcamp"
           titleLink="https://en.wikipedia.org/wiki/Dev_Bootcamp"
           dates="Jul-Sept '14"
-          skills={[]}
+          skills={<>
+            <SiRuby/>
+            <SiRubyonrails/>
+            <SiJavascript/>
+            <SiHtml5/>
+            <SiGnubash/>
+            <SiCss3/>
+          </>}
         >
           An immersive 19-week web development program. Over the final 9 weeks
           alone, I worked over 1000 hours at the San Francisco campus in an

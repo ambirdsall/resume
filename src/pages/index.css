@@ -9,12 +9,13 @@ body {
   --gold-fallback: #b69a00;
   --grey: #888;
   --dark-grey: #444;
+  --light-grey: #bbb;
   --sans-serif: "Droid Sans", sans-serif;
   --serif: "Droid Serif", serif;
   background: #fffffa;
   color: #111;
   line-height: 140%;
-  font-size: 13pt;
+  font-size: 12pt;
   font-family: var(--serif);
   max-width: 1200px;
   margin: 0 auto;
@@ -22,7 +23,8 @@ body {
 }
 
 h1 {
-  font-size: 3em;
+  font-size: 2.2em;
+  margin: 1rem 0;
 }
 h2 {
   font-weight: 400;
@@ -33,11 +35,34 @@ h3 {
   color: var(--dark-brick, var(--dark-brick-fallback));
   border-bottom: 2px solid var(--gold, var(--gold-fallback));
 }
+h4 {
+  font-size: 1.1em;
+}
 
 /* icons */
 svg {
   color: var(--grey);
   margin-right: 0.5em;
+}
+
+/* ** <dl>, what a concept */
+dl, ul {
+  list-style-type: circle;
+}
+
+dt {
+  float: left;
+  clear: left;
+  font-weight: bold;
+  margin-right: 0.5em;
+  /* list-style-type: circle; */
+}
+
+dt::after { content: " :: " }
+
+dd {
+  /* grid-column-start: 2; */
+  margin-left: 0;
 }
 
 /* * header */
@@ -99,7 +124,7 @@ svg {
 .resume {
   display: grid;
   gap: 1rem;
-  grid-template-columns: 61.8% 38.2%; /* golden ratio */
+  grid-template-columns: 60% 40%;
 }
 
 @media screen and (max-width: 1000px) {
@@ -119,17 +144,50 @@ svg {
   page-break-inside: avoid;
 }
 
-.entry-title {
-  margin-bottom: 0;
+.entry:first-child {
+  margin-top: 3em;
 }
-.entry-title > a {
+
+.entry:not(:last-of-type) {
+border-bottom: 1px dashed var(--light-grey);
+}
+
+.entry-title {
+  margin: 1rem 0 0 0;
+  color: var(--dark-grey);
+}
+.entry-title-per-se {
   color: var(--brick, var(--brick-fallback));
   margin-bottom: 2px;
 }
+.entry a:not(.entry-title-per-se) {
+  color: var(--dark-brick, var(--dark-brick-fallback));
+}
+.entry p {
+  margin-top: 0.25em;
+}
+
 .entry-dates {
   color: var(--dark-grey);
   font-family: var(--sans-serif);
 }
 
 @media print {
+  .whoami h1,
+  .whoami h2 {
+    width: fit-content;
+  }
+  .whoami { vertical-align: top; }
+  .contact-info {
+    width: 60%;
+    float: right;
+  }
+  .contact-info, .whoami {
+    display: inline-block;
+  }
+  .resume {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 }
