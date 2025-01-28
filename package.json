@@ -5,16 +5,12 @@
   "version": "0.1.0",
   "author": "Alexander Birdsall <ambirdsall@gmail.com>",
   "scripts": {
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "deploy": "gatsby build --prefix-paths && gh-pages -d public",
-    "develop": "gatsby develop",
+    "predeploy": "npm run render",
+    "deploy": "gh-pages -d dist",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "prerender": "bash scripts/prerender.sh",
     "render": "node dist/scripts/render.js > dist/index.html",
-    "postrender": "bash scripts/postrender.sh",
-    "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "postrender": "bash scripts/postrender.sh"
   },
   "dependencies": {
     "prop-types": "^15.7.2",
@@ -36,9 +32,6 @@
   "license": "UNLICENCED",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/ambirdsall/resume"
   }
 }
