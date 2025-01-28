@@ -2,6 +2,10 @@
 alex_birdsall_resume.html
 todo.org
 resume.html
+resume.pdf
+
+# static build
+dist
 
 # Logs
 logs
