@@ -10,7 +10,9 @@
     "deploy": "gatsby build --prefix-paths && gh-pages -d public",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "prerender": "bash scripts/prerender.sh",
     "render": "node dist/scripts/render.js > dist/index.html",
+    "postrender": "bash scripts/postrender.sh",
     "serve": "gatsby serve",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
   },
