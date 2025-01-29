@@ -6,14 +6,11 @@ To build locally:
 - `npm install`
 - `npm start`
 - navigate to `localhost:8080` with a browser
+- edit to your heart's content
 
-This is a very bare-bones project, so there's no built-in file-watching; any time you
-change the jsx source, you have to manually rebuild the static page. For development, try something like:
-``` sh
-find src | entr npm run render
-```
-
-(Installing `entr` is left as an exercise to the reader.)
+File watching is quite bare-bones; changes to files within `src/` which already existed at
+the time you ran `npm start` will trigger a rebuild, but adding or changing new files will
+not.
 
 To deploy changes, run
 ``` sh
