@@ -74,7 +74,7 @@ const IndexPage = ({
           <h2>Full Stack Web Developer</h2>
         </div>
         <div className="contact-info">
-          <a className="contact" href='ambirdsall.com'>
+          <a className="contact" href='https://ambirdsall.com'>
             <FaGlobe />
             ambirdsall.com
           </a>

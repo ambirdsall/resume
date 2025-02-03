@@ -7,6 +7,7 @@
   "scripts": {
     "predeploy": "npm run render",
     "deploy": "gh-pages -d dist",
+    "print": "node scripts/print-to-pdf.js",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "prerender": "bash scripts/prerender.sh",
     "render": "node dist/scripts/render.js > dist/index.html",
@@ -24,6 +25,7 @@
     "http-server": "^14.1.1",
     "prettier": "^1.18.2",
     "prop-types": "^15.7.2",
+    "puppeteer": "^24.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-icons": "^5.4.0"
