@@ -17,6 +17,7 @@ import {
   SiGnubash,
   SiHtml5,
   SiJavascript,
+  SiKotlin,
   SiLinux,
   SiOpenjdk,
   SiPostgresql,
@@ -112,10 +113,11 @@ const IndexPage = ({
           <div className="skillset">
             <h4>Languages</h4>
             <ul>
-              <li><SiPython />Python</li>
               <li><SiTypescript />TypeScript</li>
-              <li><SiRuby />Ruby</li>
+              <li><SiPython />Python</li>
               <li><SiGnubash />Bash</li>
+              <li><SiRuby />Ruby</li>
+              <li><SiKotlin/>Kotlin</li>
               <li><SiScala />Scala</li>
             </ul>
           </div>
@@ -191,6 +193,7 @@ const IndexPage = ({
            <SiReact/>
            <SiCypress/>
            <SiPython/>
+           <SiKotlin/>
            <SiOpenjdk/>
            <SiGooglecloud/>
          </>}
