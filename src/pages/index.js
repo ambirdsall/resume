@@ -165,6 +165,7 @@ const IndexPage = ({
           <Entry
             title="Artisan AI"
             titleLink="https://artisan.co"
+            jobTitle="Senior Software Engineer"
             dates="Jul '24-Dec '24"
             skills={<>
            <SiPython/>
@@ -187,6 +188,7 @@ const IndexPage = ({
           <Entry
             title="Airbyte"
             titleLink="https://airbyte.com"
+            jobTitle="Senior Software Engineer"
             dates="Aug '22-Mar '24"
             skills={<>
            <SiTypescript/>
@@ -207,6 +209,7 @@ const IndexPage = ({
           <Entry
             title="Indiegogo"
             titleLink="https://indiegogo.com"
+            jobTitle="Software Engineer"
             dates="Feb '20-May '22"
             skills={<>
                 <SiTypescript/>
@@ -234,12 +237,12 @@ const IndexPage = ({
             titleLink="https://sigfig.com"
             dates="Jul '17-Oct '19"
             skills={<>
-                                                                                                                 <SiTypescript/>
-                                                                                                                 <SiScala/>
-                                                                                                                 <SiAngular/>
-                                                                                                                 <SiWebpack/>
-                                                                                                                 <SiReact/>
-                                                                                                               </>}
+              <SiTypescript/>
+              <SiScala/>
+              <SiAngular/>
+              <SiWebpack/>
+              <SiReact/>
+            </>}
           >
             <ul>
               <li>Redesigned a large TypeScript/angularJS application’s build system: simplifying different whitelabeled builds with more explicit, modular overrides; migrating to ES2015 modules; and simplifying multilayered gulp+webpack build tooling to just webpack.</li>
@@ -253,8 +256,7 @@ const IndexPage = ({
             title="Early Career & Freelance Projects"
             jobTitle="Various Roles"
             dates="2014-2017"
-            skills={<>
-                                 </>}
+            skills={<></>}
           >
             <dl>
               <li>
