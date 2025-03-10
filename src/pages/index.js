@@ -179,8 +179,8 @@ const IndexPage = ({
          </>}
           >
             <ul>
-              <li>Designed and implemented a full rewrite of the lead outreach sequence model, transitioning from a hardcoded system to customizable workflows with branching logic.</li>
-              <li>Expanded outreach capabilities by integrating external services with custom authentication, scheduling, and error handling.</li>
+              <li>Designed and implemented a full rewrite of the lead outreach data model in the database and python backend, replacing a static hardcoded sequence with customizable workflows that support branching logic.</li>
+              <li>Expanded outreach capabilities by integrating external services, requiring new systems for custom authentication, scheduling, and error handling.</li>
               <li>Optimized database performance and resolved critical cloud infrastructure issues.</li>
               <li>Delivered complex features across the stack, including enhancements to a React-based UI.</li>
             </ul>
@@ -201,9 +201,15 @@ const IndexPage = ({
          </>}
           >
             <ul>
+              <li>
+                Wrote full-stack enhancements for the Connector Builder tool, a WYSIWYG
+                editor for user-authored definitions of data source connectors, involving
+                updates to the react UI, the underlying python SDK which consumes the
+                connector definitions, and HTTP endpoints across multiple java backend
+                services.
+              </li>
               <li>Shipped the UI for a DBT Cloud integration under a tight deadline, ensuring high-quality delivery.</li>
               <li>Restructured and modernized the Cypress end-to-end test suite for improved reliability and maintainability.</li>
-              <li>Enhanced the Connector Builder tool, implementing dynamic UI updates and backend changes to support user-authored connector definitions.</li>
             </ul>
           </Entry>
           <Entry
@@ -225,8 +231,18 @@ const IndexPage = ({
               </>}
           >
             <ul>
-              <li>Led a complete rewrite of the advertising metrics system in response to external policy changes, enhancing campaign performance insights for users.</li>
-              <li>Designed and built a new inventory management tool for campaigners, outperforming the main site in speed and usability.</li>
+              <li>
+                Designed, implemented, and coordinated the cross-functional rollout of a
+                complete rewrite of the main Rails app's advertising metrics system in the
+                wake of disruptive external changes, preserving users' ability to capture
+                campaign-specific ad metrics on the platform.
+              </li>
+              <li>
+                Part of a small team who designed and built a new inventory management
+                tool for campaigners. Personally designed an easily-deployed,
+                high-performance frontend tech stack, relying on pre-generated static
+                files, and helped write the Elixir/Phoenix backend.
+              </li>
               <li>Migrated a legacy AngularJS checkout UI to Vue, improving performance and maintainability.</li>
               <li>Built and maintained a suite of Cypress tests, significantly improving integration test reliability.</li>
             </ul>
@@ -245,7 +261,19 @@ const IndexPage = ({
             </>}
           >
             <ul>
-              <li>Redesigned a large TypeScript/angularJS application’s build system: simplifying different whitelabeled builds with more explicit, modular overrides; migrating to ES2015 modules; and simplifying multilayered gulp+webpack build tooling to just webpack.</li>
+              <li>
+                A key contributor to the rewrite of a large TypeScript/angularJS
+                application’s build system, including a migration from TS namespaces to
+                ES2015 modules.
+              </li>
+              <li>
+                Personally responsible for rewriting a multilayered gulp+webpack build to
+                a much simpler webpack build; and for redesigning the file override system
+                powering different whitelabeled builds of the frontend app, significantly
+                improving DX by replacing implicit overrides from distant subdirectories
+                with explicitly-named overrides from files colocated with their
+                corresponding base implementation.
+              </li>
               <li>Designed an A/B testing API, decoupling internal logic from a third-party backend for improved flexibility and maintainability.</li>
               <li>Contributed to the launch of a React frontend and its Scala-based REST API.</li>
             </ul>
