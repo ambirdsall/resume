@@ -69,6 +69,9 @@ const IndexPage = ({
       <link href='./index.css' rel='stylesheet' type='text/css'/>
     </head>
     <body>
+      <a className="corner-ribbon" href="./Alex-Birdsall.pdf">
+        view as PDF
+      </a>
       <header>
         <div className="whoami">
           <h1>Alex Birdsall</h1>

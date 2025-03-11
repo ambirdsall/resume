@@ -67,6 +67,30 @@ dd {
   margin-left: 0;
 }
 
+/* ** an html-only ribbon with link to pdf */
+.corner-ribbon {
+  position: fixed;
+  padding: 0.5em 0;
+  background: hsl(195, 90%, 32%);
+  box-shadow: 0 0 0 999px hsl(195, 90%, 32%);
+  clip-path: inset(0 -100%);
+  inset: 0 0 auto auto;
+  transform-origin: 0 0;
+  transform: translate(29.3%) rotate(45deg);
+  color: #eee;
+  text-decoration: none;
+}
+.corner-ribbon:hover {
+  cursor: pointer;
+  background: hsl(195, 80%, 42%);
+  box-shadow: 0 0 0 999px hsl(195, 80%, 42%);
+}
+
+@media print {
+  .corner-ribbon {
+    display: none;
+  }
+}
 /* * header */
 /* ** contact info */
 .contact-info {
