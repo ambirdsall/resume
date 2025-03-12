@@ -75,7 +75,7 @@ dd {
 /* ** an html-only ribbon with link to pdf */
 .corner-ribbon {
   position: fixed;
-  padding: 5px;
+  padding: 0.5em 0;
   background: hsl(195, 90%, 32%);
   box-shadow: 0 0 0 999px hsl(195, 90%, 32%);
   clip-path: inset(0 -100%);
