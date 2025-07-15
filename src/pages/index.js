@@ -120,7 +120,7 @@ const IndexPage = ({
       <header>
         <div className="whoami">
           <h1>Alex Birdsall</h1>
-          <h2>Full Stack Web Developer</h2>
+          <h2>Software Engineer</h2>
         </div>
         <div className="contact-info">
           <a className="contact" href="https://ambirdsall.com">
@@ -152,14 +152,14 @@ const IndexPage = ({
           </a>
         </div>
         <p className="intro--description">
-          Full-stack web developer with 9+ years of experience building
-          scalable, user-friendly applications across diverse industries.
-          Proficient in Python, TypeScript, React, and cloud technologies.
-          Demonstrated success in designing and building complex features,
-          optimizing systems, and collaborating with both nontechnical
-          colleagues and other engineers to deliver high-impact solutions.
-          Passionate about solving problems for users and developers through
-          ethical and efficient development.
+          Generalist software engineer and full-stack web developer with 9+
+          years of experience building scalable, user-friendly applications
+          accross diverse industries. Proficient in Postgres/SQL,
+          JavaScript/TypeScript, React, Ruby, and Python, with a solid
+          understanding of system architecture and design principles and a track
+          record of effective collaboration with other engineers and
+          nontechnical colleagues. A fast and curious learner who is passionate
+          about solving problems for real people.
         </p>
         <section className="key-skills">
           <div className="skillset">
