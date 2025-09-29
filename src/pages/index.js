@@ -154,7 +154,7 @@ const IndexPage = ({
         <p className="intro--description">
           Generalist software engineer and full-stack web developer with 9+
           years of experience building scalable, user-friendly applications
-          accross diverse industries. Proficient in Postgres/SQL,
+          across diverse industries. Proficient in Postgres/SQL,
           JavaScript/TypeScript, React, Ruby, and Python, with a solid
           understanding of system architecture and design principles and a track
           record of effective collaboration with other engineers and
