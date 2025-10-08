@@ -164,90 +164,36 @@ const IndexPage = ({
           <div className="skillset">
             <h4>Languages</h4>
             <ul>
-              <li>
-                <SiTypescript />
-                TypeScript
-              </li>
-              <li>
-                <SiPython />
-                Python
-              </li>
-              <li>
-                <SiGnubash />
-                Bash
-              </li>
-              <li>
-                <SiRuby />
-                Ruby
-              </li>
-              <li>
-                <SiElixir />
-                Elixir
-              </li>
-              <li>
-                <SiScala />
-                Scala
-              </li>
+              <li><SiTypescript />TypeScript</li>
+              <li><SiRuby />Ruby</li>
+              <li><SiGnubash />Bash</li>
+              <li><SiPython />Python</li>
+              <li><SiElixir />Elixir</li>
+              <li><SiScala />Scala</li>
             </ul>
           </div>
 
           <div className="skillset">
             <h4>Frameworks</h4>
             <ul>
-              <li>
-                <SiFastapi />
-                FastAPI
-              </li>
-              <li>
-                <SiRubyonrails />
-                Rails
-              </li>
-              <li>
-                <SiReact />
-                React
-              </li>
-              <li>
-                <SiVuedotjs />
-                Vue
-              </li>
-              <li>
-                <SiCypress />
-                Cypress
-              </li>
+              <li><SiFastapi />FastAPI</li>
+              <li><SiRubyonrails />Rails</li>
+              <li><SiReact />React</li>
+              <li><SiVuedotjs />Vue</li>
+              <li><SiCypress />Cypress</li>
             </ul>
           </div>
 
           <div className="skillset">
             <h4>Tools & Technologies</h4>
             <ul>
-              <li>
-                <SiDocker />
-                Docker
-              </li>
-              <li>
-                <SiPostgresql />
-                PostgreSQL
-              </li>
-              <li>
-                <SiLinux />
-                Linux
-              </li>
-              <li>
-                <SiRedis />
-                Redis
-              </li>
-              <li>
-                <SiDigitalocean />
-                DigitalOcean
-              </li>
-              <li>
-                <SiGooglecloud />
-                GCP
-              </li>
-              <li>
-                <SiAmazonwebservices />
-                AWS
-              </li>
+              <li><SiDocker />Docker</li>
+              <li><SiPostgresql />PostgreSQL</li>
+              <li><SiLinux />Linux</li>
+              <li><SiRedis />Redis</li>
+              <li><SiDigitalocean />DigitalOcean</li>
+              <li><SiGooglecloud />GCP</li>
+              <li><SiAmazonwebservices />AWS</li>
             </ul>
           </div>
 
