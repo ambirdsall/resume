@@ -181,8 +181,8 @@ const IndexPage = ({
                 Ruby
               </li>
               <li>
-                <SiKotlin />
-                Kotlin
+                <SiElixir />
+                Elixir
               </li>
               <li>
                 <SiScala />
