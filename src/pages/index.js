@@ -157,9 +157,8 @@ const IndexPage = ({
           across diverse industries. Proficient in Postgres/SQL,
           JavaScript/TypeScript, React, Ruby, and Python, with a solid
           understanding of system architecture and design principles and a track
-          record of effective collaboration with other engineers and
-          nontechnical colleagues. A fast and curious learner who is passionate
-          about solving problems for real people.
+          record of effective cross-functional collaboration. A fast and curious
+          learner who is passionate about solving problems for real people.
         </p>
         <section className="key-skills">
           <div className="skillset">
@@ -368,7 +367,7 @@ const IndexPage = ({
                 rollout of a complete rewrite of the main Rails app's
                 advertising metrics system in the wake of disruptive external
                 changes, preserving users' ability to capture campaign-specific
-                ad metrics on the platform.
+                metrics on the platform.
               </li>
               <li>
                 Part of a small team who designed and built a new inventory
