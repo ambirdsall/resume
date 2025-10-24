@@ -35,7 +35,7 @@ import {
   SiDigitalocean,
 } from "react-icons/si"
 
-import Entry from "../components/entry"
+import { Entry } from "../components/entry"
 
 // "\u00a0" is unicode codepoint for non-breaking space
 const unbroken = text => text.replace(" ", "\u00a0")
