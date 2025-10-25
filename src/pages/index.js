@@ -1,35 +1,35 @@
 import React from "react"
-import {
-  SiAngular,
-  SiCss3,
-  SiCypress,
-  SiDocker,
-  SiElixir,
-  SiFastapi,
-  SiGnubash,
-  SiHtml5,
-  SiJavascript,
-  SiKotlin,
-  SiLinux,
-  SiOpenjdk,
-  SiPostgresql,
-  SiPython,
-  SiReact,
-  SiRedis,
-  SiRuby,
-  SiRubyonrails,
-  SiScala,
-  SiTypescript,
-  SiVuedotjs,
-  SiWebpack,
-  SiGooglecloud,
-  SiAmazonwebservices,
-  SiDigitalocean,
-} from "react-icons/si"
 
 import { Entry } from "../components/entry"
 import { Head } from "../components/head"
 import { ContactInfo } from "../components/contact-info"
+import {
+  angular,
+  aws,
+  bash,
+  css,
+  cypress,
+  digitalocean,
+  docker,
+  elixir,
+  fastapi,
+  gcp,
+  html,
+  java,
+  js,
+  linux,
+  nodejs,
+  postgres,
+  python,
+  rails,
+  react,
+  redis,
+  ruby,
+  scala,
+  typescript,
+  vue,
+  webpack,
+} from "../components/skills"
 
 const IndexPage = ({
   sha = "e06ff3ac86a0c187840479eaa6cda49e", // the last gatsby-generated fingerprint, still valid for existing browser caches
@@ -59,36 +59,36 @@ const IndexPage = ({
           <div className="skillset">
             <h4>Languages</h4>
             <ul>
-              <li><SiTypescript />TypeScript</li>
-              <li><SiRuby />Ruby</li>
-              <li><SiGnubash />Bash</li>
-              <li><SiPython />Python</li>
-              <li><SiElixir />Elixir</li>
-              <li><SiScala />Scala</li>
+              {typescript.li}
+              {ruby.li}
+              {nodejs.li}
+              {bash.li}
+              {python.li}
+              {elixir.li}
             </ul>
           </div>
 
           <div className="skillset">
             <h4>Frameworks</h4>
             <ul>
-              <li><SiFastapi />FastAPI</li>
-              <li><SiRubyonrails />Rails</li>
-              <li><SiReact />React</li>
-              <li><SiVuedotjs />Vue</li>
-              <li><SiCypress />Cypress</li>
+              {rails.li}
+              {fastapi.li}
+              {react.li}
+              {vue.li}
+              {cypress.li}
             </ul>
           </div>
 
           <div className="skillset">
             <h4>Tools & Technologies</h4>
             <ul>
-              <li><SiDocker />Docker</li>
-              <li><SiPostgresql />PostgreSQL</li>
-              <li><SiLinux />Linux</li>
-              <li><SiRedis />Redis</li>
-              <li><SiDigitalocean />DigitalOcean</li>
-              <li><SiGooglecloud />GCP</li>
-              <li><SiAmazonwebservices />AWS</li>
+              {docker.li}
+              {postgres.li}
+              {linux.li}
+              {redis.li}
+              {digitalocean.li}
+              {gcp.li}
+              {aws.li}
             </ul>
           </div>
 
@@ -114,14 +114,14 @@ const IndexPage = ({
             dates="Jul '24-Dec '24"
             skills={
               <>
-                <SiPython />
-                <SiFastapi />
-                <SiPostgresql />
-                <SiRedis />
-                <SiDocker />
-                <SiTypescript />
-                <SiReact />
-                <SiDigitalocean />
+                {python.icon}
+                {fastapi.icon}
+                {postgres.icon}
+                {redis.icon}
+                {docker.icon}
+                {typescript.icon}
+                {react.icon}
+                {digitalocean.icon}
               </>
             }
           >
@@ -154,13 +154,12 @@ const IndexPage = ({
             dates="Aug '22-Mar '24"
             skills={
               <>
-                <SiTypescript />
-                <SiReact />
-                <SiCypress />
-                <SiPython />
-                <SiKotlin />
-                <SiOpenjdk />
-                <SiGooglecloud />
+                {typescript.icon}
+                {react.icon}
+                {cypress.icon}
+                {python.icon}
+                {java.icon}
+                {gcp.icon}
               </>
             }
           >
@@ -189,16 +188,16 @@ const IndexPage = ({
             dates="Feb '20-May '22"
             skills={
               <>
-                <SiTypescript />
-                <SiRuby />
-                <SiRubyonrails />
-                <SiElixir />
-                <SiVuedotjs />
-                <SiAngular />
-                <SiCypress />
-                <SiRedis />
-                <SiGooglecloud />
-                <SiAmazonwebservices />
+                {typescript.icon}
+                {ruby.icon}
+                {rails.icon}
+                {elixir.icon}
+                {vue.icon}
+                {angular.icon}
+                {cypress.icon}
+                {redis.icon}
+                {gcp.icon}
+                {aws.icon}
               </>
             }
           >
@@ -234,11 +233,11 @@ const IndexPage = ({
             dates="Jul '17-Oct '19"
             skills={
               <>
-                <SiTypescript />
-                <SiScala />
-                <SiAngular />
-                <SiWebpack />
-                <SiReact />
+                {typescript.icon}
+                {scala.icon}
+                {angular.icon}
+                {webpack.icon}
+                {react.icon}
               </>
             }
           >
@@ -326,12 +325,12 @@ const IndexPage = ({
             dates="Jul-Sept '14"
             skills={
               <>
-                <SiRuby />
-                <SiRubyonrails />
-                <SiJavascript />
-                <SiHtml5 />
-                <SiGnubash />
-                <SiCss3 />
+                {ruby.icon}
+                {rails.icon}
+                {js.icon}
+                {html.icon}
+                {bash.icon}
+                {css.icon}
               </>
             }
           >
