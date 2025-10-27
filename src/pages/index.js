@@ -47,10 +47,10 @@ const IndexPage = ({
         </div>
         <ContactInfo />
         <p className="intro--description">
-          Generalist software engineer and full-stack web developer with 9+
-          years of experience building scalable, user-friendly applications
-          across diverse industries. Proficient in Postgres/SQL,
-          JavaScript/TypeScript, React, Ruby, and Python, with a solid
+          Generalist full-stack software engineer with 9+ years of experience
+          focused on building measurable impact through pragmatic, iterative
+          product development. Proficient with SQL databases, TypeScript (both
+          in-browser and Node.js), React, Ruby, and Python, with a solid
           understanding of system architecture and design principles and a track
           record of effective cross-functional collaboration. A fast and curious
           learner who is passionate about solving problems for real people.
@@ -128,22 +128,22 @@ const IndexPage = ({
             <ul>
               <li>
                 Designed and implemented a full rewrite of the lead outreach
-                data model in the database and python backend, replacing a
-                static hardcoded sequence with customizable workflows that
-                support branching logic.
+                data model, replacing a static hardcoded sequence with
+                customizable workflows that support branching logic.
               </li>
               <li>
-                Expanded outreach capabilities by integrating external services,
+                Expanded platform capabilities by integrating external services,
                 requiring new systems for custom authentication, scheduling, and
                 error handling.
               </li>
               <li>
-                Optimized database performance and resolved critical cloud
-                infrastructure issues.
+                Resolved critical database and cloud infrastructure issues, and
+                built distributed observability fundamentals like request and
+                worker process correlation ids.
               </li>
               <li>
-                Delivered complex features across the stack, including
-                enhancements to a React-based UI.
+                End-to-end ownership of complex features across the full stack,
+                from prototypes to post-release monitoring.
               </li>
             </ul>
           </Entry>
@@ -169,7 +169,7 @@ const IndexPage = ({
                 WYSIWYG editor for user-authored definitions of data source
                 connectors, involving updates to the react UI, the underlying
                 python SDK which consumes the connector definitions, and HTTP
-                endpoints across multiple java backend services.
+                endpoints across multiple backend service boundaries.
               </li>
               <li>
                 Shipped the UI for a DBT Cloud integration under a tight
@@ -212,17 +212,17 @@ const IndexPage = ({
               <li>
                 Part of a small team who designed and built a new inventory
                 management tool for campaigners. Personally designed an
-                easily-deployed, high-performance frontend tech stack, relying
-                on pre-generated static files, and helped write the
-                Elixir/Phoenix backend.
+                easily-deployed, high-performance frontend tech stack and helped
+                write the Elixir/Phoenix backend.
               </li>
               <li>
-                Migrated a legacy AngularJS checkout UI to Vue, improving
-                performance and maintainability.
+                Rebuilt the legacy checkout UI, halving the load time and
+                significantly improving maintainability of a payment processing
+                system handling millions of dollars in transactions.
               </li>
               <li>
-                Built and maintained a suite of Cypress tests, significantly
-                improving integration test reliability.
+                Responsible for diagnosing and resolving production issues as
+                part of a regular on-call rotation.
               </li>
             </ul>
           </Entry>
