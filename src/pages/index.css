@@ -1,6 +1,6 @@
 /* * global */
 /* ** text styles, global variables, etc */
-body {
+:root {
   --brick: oklch(50.05% 0.147 26.87);
   --brick-fallback: #a73832;
   --dark-brick: oklch(30.05% 0.147 26.87);
@@ -12,6 +12,9 @@ body {
   --light-grey: #bbb;
   --sans-serif: "Droid Sans", sans-serif;
   --serif: "Droid Serif", serif;
+}
+
+body {
   background: #fffffa;
   color: #111;
   line-height: 140%;
@@ -167,16 +170,6 @@ dd {
   .resume {
     grid-template-columns: 1fr; /* Single column layout */
   }
-  .entry:first-child {
-    margin-top: 0;
-  }
-  .entry + .entry {
-    border-top: none;
-  }
-  .entry:not(:last-child),
-  .left {
-    border-bottom: 1px dashed var(--light-grey);
-  }
 }
 
 /* ** entry */
@@ -212,6 +205,15 @@ dd {
   font-family: var(--sans-serif);
 }
 
+@media screen and (max-width: 800px) {
+  .entry:first-child {
+    margin-top: 0;
+  }
+  .right > .entry:first-of-type {
+    border-top: 1px dashed var(--light-grey);
+  }
+}
+
 @media print {
   .whoami h1,
   .whoami h2 {
@@ -238,9 +240,5 @@ dd {
   }
   .entry + .entry {
     border-top: none;
-  }
-  .entry:not(:last-child),
-  .left {
-    border-bottom: 1px dashed var(--light-grey);
   }
 }
