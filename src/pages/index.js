@@ -46,7 +46,7 @@ const ResumePageWrapper = ({
   </html>
 )
 
-const IndexPage = () => (
+const ResumePage = () => (
   <ResumePageWrapper>
     <header>
       <div className="whoami">
@@ -377,4 +377,4 @@ const IndexPage = () => (
   </ResumePageWrapper>
 )
 
-export default IndexPage
+export default ResumePage
