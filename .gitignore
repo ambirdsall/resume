@@ -4,6 +4,9 @@ todo.org
 resume.html
 resume.pdf
 
+# specific cover letters
+cover-letters/companies/*
+
 # static build
 dist
 

@@ -1,0 +1,35 @@
+#+title: An Occasionally-Necessary Evil
+
+I'm going to level with you: I hate writing cover letters. And as luck would have it, they
+are often not required to get a software engineering job. However, the latter is neither a
+universal nor static state of affairs, and the former is, per se, a dogshit reason to not write
+one. Thus, this.
+
+Evaluate this elisp snippet to scaffold cover letter and statement template files for a
+new company and open your choice of template for editing:
+#+begin_src elisp :results silent
+(let* ((company-name (read-from-minibuffer "What is the name of the company? "))
+       (company-name-placeholder "NAME_OF_COMPANY")
+       (cwd default-directory)
+       (templates-dir
+        (concat cwd "templates"))
+       (company-dir
+        (concat cwd "companies/" (s-downcase (s-dashed-words company-name)))))
+  ;; TODO handle already-existing company dirs
+  ;;   i.e. rename old template files with prefix (ISO date of last file modification) and
+  ;;   then copy new template files into the existing dir.
+  ;;   IIUC, the copying bit should be handled by the optional 5th arg to `copy-directory'
+  (copy-directory templates-dir company-dir nil t t)
+  (dolist (template (directory-files company-dir))
+    (let ((default-directory company-dir))
+      (when (file-regular-p template)
+        (with-temp-file template
+          (insert-file-contents template)
+          (goto-char (point-min))
+          (while (search-forward company-name-placeholder nil t)
+            (replace-match company-name t))))))
+  (let ((template-to-edit
+         (completing-read "Which would you like to write? "
+                          (reverse (directory-files company-dir 'full (rx ".typ" eos))))))
+    (and template-to-edit (find-file template-to-edit))))
+#+end_src
