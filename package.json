@@ -7,8 +7,9 @@
   "scripts": {
     "predeploy": "npm run render",
     "deploy": "gh-pages -d dist",
+    "print-master": "node scripts/print-to-pdf.js",
+    "postprint-master": "rsync --backup --backup-dir=./resumes --suffix=.$(date --iso).pdf dist/Alex-Birdsall.pdf ~/Documents",
     "print": "node scripts/print-to-pdf.js",
-    "postprint": "rsync --backup --backup-dir=./resumes --suffix=.$(date --iso).pdf dist/Alex-Birdsall.pdf ~/Documents",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "prerender": "bash scripts/prerender.sh",
     "render": "node dist/scripts/render.js > dist/index.html",
